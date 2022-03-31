@@ -1,109 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="feature.SampleRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-31T01:47:36" hostname="DESKTOP-I19BP3O" time="1.777">
+<testsuite name="feature.SampleRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-31T02:31:14" hostname="DESKTOP-I19BP3O" time="5.07">
   <properties/>
-  <testcase name="[1:2] Run a sample Api GET" classname="feature.SampleRunner" time="1.777"/>
-  <system-out><![CDATA[20:47:36.970 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-20:47:37.320 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
-20:47:37.332 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-20:47:37.334 [Test worker] DEBUG com.intuit.karate - request:
-1 > GET https://reqres.in/api/users?page=2%27
+  <testcase name="[1:8] Run a sample Api GET with background" classname="feature.SampleRunner" time="2.983"/>
+  <testcase name="[2:19] Run a sample Api GET full url" classname="feature.SampleRunner" time="2.079"/>
+  <system-out><![CDATA[21:31:14.827 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+21:31:15.397 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+21:31:15.420 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:31:15.423 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2%2527
+1 > Accept: application/pdf
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
 
-20:47:37.337 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-20:47:37.355 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://reqres.in:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-20:47:37.357 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
-20:47:37.557 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/172.67.222.36:443
-20:47:37.558 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/172.67.222.36:443 with timeout 30000
-20:47:37.683 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-20:47:37.683 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-20:47:37.683 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-20:47:37.930 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-20:47:37.931 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
-20:47:37.931 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
-20:47:37.931 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni.cloudflaressl.com, O="Cloudflare, Inc.", L=San Francisco, ST=California, C=US
-20:47:37.931 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.reqres.in, reqres.in, sni.cloudflaressl.com]
-20:47:37.932 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Cloudflare Inc ECC CA-3, O="Cloudflare, Inc.", C=US
-20:47:37.936 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.12:65234<->172.67.222.36:443
-20:47:37.937 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
-20:47:37.937 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users?page=2%27 HTTP/1.1
-20:47:37.937 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-20:47:37.938 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-20:47:37.940 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/users?page=2%27 HTTP/1.1
-20:47:37.940 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: reqres.in
-20:47:37.940 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-20:47:37.941 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
-20:47:37.941 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
-20:47:37.941 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/users?page=2%27 HTTP/1.1[\r][\n]"
-20:47:37.941 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: reqres.in[\r][\n]"
-20:47:37.941 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-20:47:37.941 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)[\r][\n]"
-20:47:37.941 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-20:47:37.942 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-20:47:38.256 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 31 Mar 2022 01:47:39 GMT[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
-20:47:38.257 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Via: 1.1 vegur[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=14400[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-Cache-Status: MISS[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C4FkFEIDruCUmxTC5INsCMd%2B2u6uxucVFsj566cY%2BKGsg%2BmFdDkVIMtcTLNTRwSmrmkc3gXgoSxs%2Bc2OZsu%2BZe4CMiJoTwPd3CsTjLz5f4RNC49XeVXpUrgs9ZA%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-RAY: 6f456b13fa956da3-MIA[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
-20:47:38.258 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
-20:47:38.259 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-20:47:38.259 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "17b[\r][\n]"
-20:47:38.259 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
-20:47:38.259 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
-20:47:38.260 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf]]]>&#x7f;<![CDATA[[0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0][\r][\n]"
-20:47:38.263 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 31 Mar 2022 01:47:39 GMT
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: Express
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Via: 1.1 vegur
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=14400
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-Cache-Status: MISS
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-20:47:38.264 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C4FkFEIDruCUmxTC5INsCMd%2B2u6uxucVFsj566cY%2BKGsg%2BmFdDkVIMtcTLNTRwSmrmkc3gXgoSxs%2Bc2OZsu%2BZe4CMiJoTwPd3CsTjLz5f4RNC49XeVXpUrgs9ZA%3D"}],"group":"cf-nel","max_age":604800}
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: cloudflare
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-RAY: 6f456b13fa956da3-MIA
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
-20:47:38.265 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-20:47:38.275 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-20:47:38.287 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
-20:47:38.287 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-20:47:38.287 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://reqres.in:443] can be kept alive indefinitely
-20:47:38.287 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
-20:47:38.288 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://reqres.in:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
-20:47:38.288 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 947,03
+21:31:15.426 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+21:31:15.461 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://reqres.in:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+21:31:15.464 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
+21:31:15.595 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/104.21.59.93:443
+21:31:15.595 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/104.21.59.93:443 with timeout 30000
+21:31:16.339 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+21:31:16.339 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+21:31:16.340 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+21:31:17.215 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+21:31:17.215 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+21:31:17.215 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+21:31:17.215 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni.cloudflaressl.com, O="Cloudflare, Inc.", L=San Francisco, ST=California, C=US
+21:31:17.216 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.reqres.in, reqres.in, sni.cloudflaressl.com]
+21:31:17.216 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Cloudflare Inc ECC CA-3, O="Cloudflare, Inc.", C=US
+21:31:17.223 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.12:61883<->104.21.59.93:443
+21:31:17.224 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+21:31:17.225 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users%3Fpage=2%2527 HTTP/1.1
+21:31:17.225 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+21:31:17.226 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+21:31:17.229 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/users%3Fpage=2%2527 HTTP/1.1
+21:31:17.229 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/pdf
+21:31:17.229 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: reqres.in
+21:31:17.230 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+21:31:17.230 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+21:31:17.230 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+21:31:17.230 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/users%3Fpage=2%2527 HTTP/1.1[\r][\n]"
+21:31:17.230 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/pdf[\r][\n]"
+21:31:17.230 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: reqres.in[\r][\n]"
+21:31:17.230 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+21:31:17.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)[\r][\n]"
+21:31:17.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21:31:17.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+21:31:17.451 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 31 Mar 2022 02:31:18 GMT[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Via: 1.1 vegur[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=14400[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-Cache-Status: HIT[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Age: 696[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=r1JZXB5N0Ijpwq2dIJBof%2FEWUHM7EqXV%2BRpgUtDlw0bAmVLBnEQ%2FnuzGMzEjb2AN07c9GhIJpnBYY%2FCYq%2Fy3JzXyRPUCnfvibXN4KV8gkRqczPjoAnM2Hsd11Ho%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+21:31:17.452 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-RAY: 6f45ab064de24d35-GRU[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "170[\r][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0xd1][0xcd]n[0xdb]0[0xc][0x7][0xf0]W[0xd1][0xd8][0xab][0xbc]X[0xb2]l'[0xba]5Y[0xf6][0x0]Eo[0xc5]P[0xb0]6[0x9b][0x8][0xf5],[0x85][0x92][0xba][0x15]A[0xde][0xbd][0xe8][0x7]\[0x17][0xf0]M[0x82][0xf8][0xff][0x81][0x14][0xcf][0x10][0xf0]@`[0x95][0x84]@|[0xff]qi$$[0x9f]p[0x0][0xab][0xf4][0xe7][0xf1][0xfd]%[0x82][0xd5][0x12]zL[0x8][0xf6][0xee][0xc][0xae]]]>&#x7f;<![CDATA[[0xcf][0x8d][0xf8][0x97][0xc0]BG[0x9c][0x7][0xc2][0x11]$[0xbc][0x10]2X][0x96][0xa5][0x84][0xce][0xf][0x9e][0xc1][0xc2][0xd5]f[0xbd][0xd5][0xbf][0x14]H[0x8]8&?[0xd2][0xfd]3[0xe][0xf9]-[0xa8][0xea][0xc2][0x94][0xba][0x84][0x8b][0xfc] [0xf5]D>[0xe6][0xee][0x18][0x1d][\n]"
+21:31:17.453 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xf6][0x91][0xe6][0xac][0x9a][0xb1][0xbb][0xd6]Tm[0xbd][0xc4][0xb6][0x85].+5[0xb1][0xd5][0xc4]&[0xce]$[0x98][0xfa]9[0xa9]g[0xe4][0xf6][0xb7][0xda]Tz[0x89][0xdc][0x14][0xaa]i[0xcc]D[0x9a][0x89][0xc4]SF[0x11][0x9f]^[0xe6]d5#[0xdb][0xed][0xce][0xec][0xcc][0x12]i[\n]"
+21:31:17.454 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xb3]V_][0xd6]_][0xba][0x3][0xf1][0xe0][0x86]o[0xa6][0x99][0x99]{][0xaf][0xab][0xfd][0xf2][0xe4][0xca][0xd4][0xcd]d6[0x93][0xf9]0d[0x12])[0xf3]){[0xf7][0xfd]K[0xeb][0x19]\W[0xdb][0xf2]z[0xbf][0xbc][0xa9]Z[0xab][0x16].]]>&#x7f;<![CDATA[$[0xc4][0x1c][0x82][0xe7][0x4][0xf6][0xc][0x99][0x7][0xb0]pL)D[0xbb]Z1[0x9d][0x98][0xe2]O7[0xae][0xae]>k[0x8a]#a[0xef][0xc6][0x3]HH[0xf4]?[0x81][0x85][/[0x9e][0x88][0x82][0xb8][0xa1][0xd3][\r]E[0xf1][0xc8]DRt~L[0xec][0x1e]rr~[0x8c]"[0xf9]]]>&#x7f;<![CDATA[[0xc8]}[0x14][0x91][0xf8][0x99]Xt>[0xa6]([0x90]I`[0x8]L[0x9d][0xc3]D[0xfd][0xf][0xb8]\^[0x1]0[0x9f][0xa1]R[0xc1][0x2][0x0][0x0][\r][\n]"
+21:31:17.458 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 31 Mar 2022 02:31:18 GMT
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: Express
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Via: 1.1 vegur
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=14400
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-Cache-Status: HIT
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Age: 696
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=r1JZXB5N0Ijpwq2dIJBof%2FEWUHM7EqXV%2BRpgUtDlw0bAmVLBnEQ%2FnuzGMzEjb2AN07c9GhIJpnBYY%2FCYq%2Fy3JzXyRPUCnfvibXN4KV8gkRqczPjoAnM2Hsd11Ho%3D"}],"group":"cf-nel","max_age":604800}
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: cloudflare
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << CF-RAY: 6f45ab064de24d35-GRU
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+21:31:17.459 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+21:31:17.467 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+21:31:17.477 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+21:31:17.477 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+21:31:17.478 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://reqres.in:443] can be kept alive indefinitely
+21:31:17.478 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+21:31:17.478 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://reqres.in:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+21:31:17.478 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 2047,25
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: MISS
-1 < CF-RAY: 6f456b13fa956da3-MIA
+1 < Age: 696
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6f45ab064de24d35-GRU
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 31 Mar 2022 01:47:39 GMT
+1 < Date: Thu, 31 Mar 2022 02:31:18 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=r1JZXB5N0Ijpwq2dIJBof%2FEWUHM7EqXV%2BRpgUtDlw0bAmVLBnEQ%2FnuzGMzEjb2AN07c9GhIJpnBYY%2FCYq%2Fy3JzXyRPUCnfvibXN4KV8gkRqczPjoAnM2Hsd11Ho%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+21:31:17.511 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:31:17.517 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+21:31:17.523 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+21:31:17.597 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+21:31:17.602 [Test worker] INFO com.intuit.karate - [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+21:31:17.604 [Test worker] INFO com.intuit.karate - [print] 200
+21:31:17.604 [Test worker] INFO com.intuit.karate - [print] 2047
+21:31:17.605 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+21:31:17.605 [Test worker] INFO com.intuit.karate - [print] {
+  "Date": [
+    "Thu, 31 Mar 2022 02:31:18 GMT"
+  ],
+  "Content-Type": [
+    "application/json; charset=utf-8"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "X-Powered-By": [
+    "Express"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "Etag": [
+    "W/\"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8\""
+  ],
+  "Via": [
+    "1.1 vegur"
+  ],
+  "Cache-Control": [
+    "max-age=14400"
+  ],
+  "CF-Cache-Status": [
+    "HIT"
+  ],
+  "Age": [
+    "696"
+  ],
+  "Expect-CT": [
+    "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=r1JZXB5N0Ijpwq2dIJBof%2FEWUHM7EqXV%2BRpgUtDlw0bAmVLBnEQ%2FnuzGMzEjb2AN07c9GhIJpnBYY%2FCYq%2Fy3JzXyRPUCnfvibXN4KV8gkRqczPjoAnM2Hsd11Ho%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "6f45ab064de24d35-GRU"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+  ]
+}
+
+21:31:17.608 [Test worker] INFO com.intuit.karate - [print] 
+21:31:17.636 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+21:31:17.644 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+21:31:17.645 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:31:17.645 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2%27
+1 > Accept: application/pdf
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+21:31:17.645 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+21:31:17.646 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}->https://reqres.in:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+21:31:17.646 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
+21:31:17.646 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/104.21.59.93:443
+21:31:17.646 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/104.21.59.93:443 with timeout 30000
+21:31:18.094 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+21:31:18.095 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+21:31:18.095 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+21:31:19.100 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+21:31:19.101 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+21:31:19.101 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+21:31:19.101 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni.cloudflaressl.com, O="Cloudflare, Inc.", L=San Francisco, ST=California, C=US
+21:31:19.101 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.reqres.in, reqres.in, sni.cloudflaressl.com]
+21:31:19.101 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Cloudflare Inc ECC CA-3, O="Cloudflare, Inc.", C=US
+21:31:19.103 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.12:61884<->104.21.59.93:443
+21:31:19.103 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+21:31:19.103 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users?page=2%27 HTTP/1.1
+21:31:19.103 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+21:31:19.103 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+21:31:19.104 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> GET /api/users?page=2%27 HTTP/1.1
+21:31:19.104 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept: application/pdf
+21:31:19.104 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: reqres.in
+21:31:19.104 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+21:31:19.104 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+21:31:19.105 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "GET /api/users?page=2%27 HTTP/1.1[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept: application/pdf[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: reqres.in[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21:31:19.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+21:31:19.520 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Thu, 31 Mar 2022 02:31:20 GMT[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "X-Powered-By: Express[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Via: 1.1 vegur[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Cache-Control: max-age=14400[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "CF-Cache-Status: HIT[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Age: 2008[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tBgVuIF4%2B5DW23F0LCajubEH3Tnarwg87H0bTEvyngSJpLNz2XBJa2XldhyjMe3ljdHDbysYxaebK6eJJx4fAsALX1ijVyxYb0wTDEJIkpcuxERysUd5TmOjFXI%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: cloudflare[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "CF-RAY: 6f45ab13498d603c-GRU[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+21:31:19.521 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+21:31:19.522 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+21:31:19.522 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "17b[\r][\n]"
+21:31:19.522 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+21:31:19.522 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+21:31:19.523 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf]]]>&#x7f;<![CDATA[[0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0][\r][\n]"
+21:31:19.523 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+21:31:19.523 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Thu, 31 Mar 2022 02:31:20 GMT
+21:31:19.523 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json; charset=utf-8
+21:31:19.523 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+21:31:19.523 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << X-Powered-By: Express
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Access-Control-Allow-Origin: *
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Via: 1.1 vegur
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Cache-Control: max-age=14400
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << CF-Cache-Status: HIT
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Age: 2008
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tBgVuIF4%2B5DW23F0LCajubEH3Tnarwg87H0bTEvyngSJpLNz2XBJa2XldhyjMe3ljdHDbysYxaebK6eJJx4fAsALX1ijVyxYb0wTDEJIkpcuxERysUd5TmOjFXI%3D"}],"group":"cf-nel","max_age":604800}
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Vary: Accept-Encoding
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Server: cloudflare
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << CF-RAY: 6f45ab13498d603c-GRU
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+21:31:19.524 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+21:31:19.524 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+21:31:19.526 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+21:31:19.526 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+21:31:19.526 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {s}->https://reqres.in:443] can be kept alive indefinitely
+21:31:19.526 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+21:31:19.526 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {s}->https://reqres.in:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+21:31:19.526 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 1880,32
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2008
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6f45ab13498d603c-GRU
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 31 Mar 2022 02:31:20 GMT
 1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C4FkFEIDruCUmxTC5INsCMd%2B2u6uxucVFsj566cY%2BKGsg%2BmFdDkVIMtcTLNTRwSmrmkc3gXgoSxs%2Bc2OZsu%2BZe4CMiJoTwPd3CsTjLz5f4RNC49XeVXpUrgs9ZA%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tBgVuIF4%2B5DW23F0LCajubEH3Tnarwg87H0bTEvyngSJpLNz2XBJa2XldhyjMe3ljdHDbysYxaebK6eJJx4fAsALX1ijVyxYb0wTDEJIkpcuxERysUd5TmOjFXI%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
@@ -112,12 +355,9 @@
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
-20:47:38.353 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
-20:47:38.362 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
-20:47:38.375 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
 ---------------------------------------------------------
 feature: classpath:feature/sample.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 1,4356
+scenarios:  2 | passed:  2 | failed:  0 | time: 4,6446
 ---------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
