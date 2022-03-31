@@ -16,7 +16,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5
     implementation group: 'com.intuit.karate', name: 'karate-junit5', version: '0.9.6'
+
 }
+
+
 
 test {
     useJUnitPlatform()
