@@ -57,3 +57,5 @@ Feature: Post API Demo
       And set requestBody.job = 'engineer'
       When method POST
       Then status 201
+      And print response
+      And match response == { "createdAt": "#ignore","name": "Erwin","id": "#string", "job": "engineer"}
