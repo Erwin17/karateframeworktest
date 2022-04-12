@@ -6,6 +6,6 @@ public class DeleteRunner {
 
     @Karate.Test
     Karate sampleTest(){
-        return Karate.run("delete").relativeTo(getClass());
+        return Karate.run("Delete").relativeTo(getClass());
     }
 }

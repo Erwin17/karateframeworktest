@@ -8,7 +8,9 @@ En este repositorio encontrara diferentes pruebas que hago sobre un api publica,
 Podra revisar diferentes tipos de peticiones PUT, GET, DELETE, POST, en los cuales hago uso de multiples variables para ganrantizar las pruebas que hago soibre dicha api.
 
 
-
+# ¿ Que necesita para instalar ?
+En mi caso utilize Gradle 7.2 y java 8 en mi maquina funcionando al 100%.
+Creeria que con esto seria suficiente para poder experimentar con este repositorio.
 
 
 Mas detallado
