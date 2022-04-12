@@ -2,10 +2,10 @@ package feature;
 
 import com.intuit.karate.junit5.Karate;
 
-public class SampleRunner {
+public class GetRunner {
 
     @Karate.Test
     Karate sampleTest(){
-        return Karate.run("sample").relativeTo(getClass());
+        return Karate.run("Get").relativeTo(getClass());
     }
 }

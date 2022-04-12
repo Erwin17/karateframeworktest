@@ -6,6 +6,6 @@ public class PutRunner {
 
     @Karate.Test
     Karate sampleTest(){
-        return Karate.run("put").relativeTo(getClass());
+        return Karate.run("Put").relativeTo(getClass());
     }
 }

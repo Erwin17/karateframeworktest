@@ -6,6 +6,6 @@ public class PostRunner {
 
     @Karate.Test
     Karate postTest(){
-        return Karate.run("post").relativeTo(getClass());
+        return Karate.run("Post").relativeTo(getClass());
     }
 }
