@@ -24,3 +24,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}

@@ -1,4 +1,4 @@
-package feature;
+package methodtest.put;
 
 import com.intuit.karate.junit5.Karate;
 

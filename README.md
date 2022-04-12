@@ -14,7 +14,7 @@ Creeria que con esto seria suficiente para poder experimentar con este repositor
 
 
 Mas detallado
-C:/Users/Erwin/Documents/repository/karateframeworktest/build/surefire-reports/feature.sample.html
+/karateframeworktest/build/surefire-reports/feature.sample.html
 
 Porcentaje de cumplimiento
-C:\Users\Erwin\Documents\repository\karateframeworktest\build\reports\tests\test
+\karateframeworktest\build\reports\tests\test

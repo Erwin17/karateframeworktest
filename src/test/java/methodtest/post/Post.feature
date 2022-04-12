@@ -3,7 +3,7 @@ Feature: Post API Demo
   Background:
     * url 'https://reqres.in/api'
     * header Accept = 'application/json'
-    * def expectedOutput = read('response1.json')
+    * def expectedOutput = read('data/response1.json')
 
   Scenario: Post Demo 1
     Given path '/users'
@@ -31,7 +31,7 @@ Feature: Post API Demo
 
     Scenario: Post Demo 4
       Given path '/users'
-      And def requestBody = read('userdata.json')
+      And def requestBody = read('data/userdata.json')
       And request requestBody
       When method POST
       Then status 201
@@ -52,7 +52,7 @@ Feature: Post API Demo
 
     Scenario: Post Demo 6
       Given path '/users'
-      And def requestBody = read('userdata.json')
+      And def requestBody = read('data/userdata.json')
       And request requestBody
       And set requestBody.job = 'engineer'
       When method POST

@@ -1,4 +1,4 @@
-package feature;
+package methodtest.delete;
 
 import com.intuit.karate.junit5.Karate;
 
