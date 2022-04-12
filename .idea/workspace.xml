@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7df8bbd-1708-464e-b48a-a7276c3ceab8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/DeleteRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/PutRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/delete.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/put.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/karate-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/feature/ConfigDemoRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/configdemo1.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
@@ -68,6 +67,7 @@
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
@@ -87,17 +87,17 @@
       <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\java\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest" />
       <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\resources\feature" />
       <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\java\feature" />
       <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\resources" />
       <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\resources\features" />
-      <recent name="C:\Users\Erwin\Documents\repository\karateframeworktest\src\test\java\test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="feature" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DeleteRunner">
+  <component name="RunManager" selected="JUnit.ConfigDemoRunner">
     <configuration name="SampleRunner" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,6 +119,37 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ConfigDemoRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karateframeworktest.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature" />
+      <option name="MAIN_CLASS_NAME" value="feature.ConfigDemoRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigDemoRunner.sampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karateframeworktest.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature" />
+      <option name="MAIN_CLASS_NAME" value="feature.ConfigDemoRunner" />
+      <option name="METHOD_NAME" value="sampleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeleteRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="karateframeworktest.test" />
       <extension name="coverage">
@@ -130,37 +161,6 @@
       <option name="PACKAGE_NAME" value="feature" />
       <option name="MAIN_CLASS_NAME" value="feature.DeleteRunner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="karateframeworktest.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="feature.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="feature" />
-      <option name="MAIN_CLASS_NAME" value="feature.PostRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostRunner.postTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="karateframeworktest.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="feature.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="feature" />
-      <option name="MAIN_CLASS_NAME" value="feature.PostRunner" />
-      <option name="METHOD_NAME" value="postTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConfigDemoRunner" />
+        <item itemvalue="JUnit.SampleRunner" />
+        <item itemvalue="JUnit.ConfigDemoRunner.sampleTest" />
         <item itemvalue="JUnit.DeleteRunner" />
         <item itemvalue="JUnit.PutRunner" />
-        <item itemvalue="JUnit.PostRunner" />
-        <item itemvalue="JUnit.PostRunner.postTest" />
-        <item itemvalue="JUnit.SampleRunner" />
       </list>
     </recent_temporary>
   </component>
