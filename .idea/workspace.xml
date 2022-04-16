@@ -5,32 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7df8bbd-1708-464e-b48a-a7276c3ceab8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karate-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/Get.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/configdemo1.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/post.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/put.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/response1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/feature/userdata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Principal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/ConfigDemoRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/configdemo/ConfigDemoRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/DeleteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/delete/DeleteRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/GetRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/get/GetRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/PostRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/post/PostRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/PutRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/put/PutRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/Delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/delete/Delete.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/Get.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/get/Get.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/Post.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/post/Post.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/Put.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/put/Put.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/configdemo1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/methodtest/configdemo/configdemo1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/response1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/response1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/userdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/userdata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/feature.SampleRunner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/feature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/feature/sample.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/surefire-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/surefire-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-feature.SampleRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +48,23 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="karateframeworktest" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="karateframeworktest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="karateframeworktest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="karateframeworktest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -117,7 +125,7 @@
       <recent name="feature" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostRunner">
+  <component name="RunManager" selected="Gradle.karateframeworktest [test]">
     <configuration name="SampleRunner" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,6 +143,27 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="karateframeworktest [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -164,21 +193,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="methodtest.delete" />
       <option name="MAIN_CLASS_NAME" value="methodtest.delete.DeleteRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="karateframeworktest.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="methodtest.get.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="methodtest.get" />
-      <option name="MAIN_CLASS_NAME" value="methodtest.get.GetRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.karateframeworktest [test]" />
         <item itemvalue="JUnit.PostRunner" />
         <item itemvalue="JUnit.ConfigDemoRunner" />
         <item itemvalue="JUnit.PutRunner" />
         <item itemvalue="JUnit.DeleteRunner" />
-        <item itemvalue="JUnit.GetRunner" />
       </list>
     </recent_temporary>
   </component>
